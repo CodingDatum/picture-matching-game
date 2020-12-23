@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    text-align:center;
+}
+
+/* HTML TAGS */
+
+
+
+/* CLASSES */
+.image{
+    width: 10%;
+    background-image: src="images/question-mark.png";
+    
+}
+
+
+/* IDS */
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12{
+
+    background-image: src("images/image1.png");
+
+}
