@@ -8,16 +8,34 @@
 
 
 /* CLASSES */
+
 .image{
     width: 10%;
-    background-image: src="images/question-mark.png";
     
 }
 
 
 /* IDS */
-#pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12{
 
-    background-image: src("images/image1.png");
+/* .container{
+    background-color:teal;
+    display: flex;
+    align-items: center;
 
 }
+.image{
+    background-image: url('images/question-mark.png');
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    border: 1px solid white;
+    
+} */
+
+
+/* IDS
+#pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11, #pic12{
+
+    /* background-image: src"images/image1.png"; */
+
+
