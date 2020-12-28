@@ -61,7 +61,7 @@ function showImages(slot, source){
                 secondCard.src = "images/question-mark.png";
                 firstCard.src = "images/question-mark.png";
                 activeCards = 0;
-            }, 3000);
+            }, 2000);
         };
     };
 
