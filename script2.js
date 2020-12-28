@@ -12,6 +12,8 @@ var secondCard;
 
 var isPlaying = false;
 
+var sound = new Audio("sounds/ding.mp3");
+
 var ourCardSlots = document.querySelectorAll(".image");
 
 //create an ordered aray with numbers 1-6 twice
@@ -25,24 +27,21 @@ for( let i = 0; i<shuffledDeck.length; i++){
         var picLocation = shuffledDeck[i];
         var picSource = "images/image" + picLocation + ".png";
         var currentSlot = document.getElementById("pic" + (i+1));
-        console.log(activeCards);
         if(activeCards < 3){
             showImages(currentSlot, picSource);
         };
-        
-        // for (let j = 0; j < shuffledDeck.length; j++){
-            
-        // };
     });
 };
 
 function showImages(slot, source){
 
     if(activeCards === 0){
+        sound.play();
         slot.src = source;
         firstCard = slot;
         activeCards = activeCards + 1;
     }else if(activeCards === 1){
+        sound.play();
         slot.src = source;
         secondCard = slot;
         activeCards ++;
@@ -69,7 +68,6 @@ function showImages(slot, source){
 
 function twoOrderedLists(numberOfCards){
 
-    //start with first half of list then do it again for second half
     var orderedList = [];
     var twice = 0;
     while(twice<2){
@@ -86,9 +84,6 @@ function twoOrderedLists(numberOfCards){
 }
 
 function shuffleTheDeck(deck){
-
-    // generate a random number, and use it as the index number from which to remove and store the value into a variable
-    // then add this variable to a new array
 
     var newArray = [];
 
