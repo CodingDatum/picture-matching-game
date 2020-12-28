@@ -12,7 +12,8 @@ var secondCard;
 
 var isPlaying = false;
 
-var sound = new Audio("sounds/ding.mp3");
+var ding = new Audio("sounds/ding.mp3");
+var applause = new Audio("sounds/cheering.mp3");
 
 var ourCardSlots = document.querySelectorAll(".image");
 
@@ -36,12 +37,12 @@ for( let i = 0; i<shuffledDeck.length; i++){
 function showImages(slot, source){
 
     if(activeCards === 0){
-        sound.play();
+        ding.play();
         slot.src = source;
         firstCard = slot;
         activeCards = activeCards + 1;
     }else if(activeCards === 1){
-        sound.play();
+        ding.play();
         slot.src = source;
         secondCard = slot;
         activeCards ++;
@@ -51,6 +52,7 @@ function showImages(slot, source){
             if(imageCount < shuffledDeck.length){
                 return;
             }else{
+                applause.play();
                 setTimeout(function(){
                     window.alert("HOLY SHIT " + username + " YOU FUCKING DID IT!!!!");
                 }, 500);
