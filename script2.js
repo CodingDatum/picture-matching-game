@@ -54,7 +54,7 @@ function showImages(slot, source){
             }else{
                 applause.play();
                 setTimeout(function(){
-                    window.alert("HOLY SHIT " + username + " YOU FUCKING DID IT!!!!");
+                    window.alert("Congratulations " + username + ", you did it!");
                 }, 500);
             };
         }else{
