@@ -1,7 +1,7 @@
 // shuffle the pictures
 
-var user = prompt("What's your name champ??");
-var username = user.toUpperCase();
+//var user = prompt("What's your name champ??");
+//var username = user.toUpperCase();
 
 var activeCards = 0;
 
@@ -53,9 +53,9 @@ function showImages(slot, source){
                 return;
             }else{
                 applause.play();
-                setTimeout(function(){
-                    window.alert("Congratulations " + username + ", you did it!");
-                }, 500);
+                //setTimeout(function(){
+                    //window.alert("Congratulations " + username + ", you did it!");
+                //}, 500);
             };
         }else{
             setTimeout(function(){
